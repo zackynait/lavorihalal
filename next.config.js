@@ -9,6 +9,10 @@ const nextConfig = {
       },
     ],
   },
+  // Disabilita Turbopack
+  experimental: {
+    turbo: false
+  }
 }
 
 module.exports = nextConfig

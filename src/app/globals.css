@@ -2,21 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 17, 24, 39; /* gray-900 */
-  --background-rgb: 255, 255, 255; /* white */
-  --primary-600: 22, 163, 74; /* green-600 */
-  --primary-700: 21, 128, 61; /* green-700 */
-  --gray-50: 249, 250, 251; /* gray-50 */
-  --gray-100: 243, 244, 246; /* gray-100 */
-  --gray-200: 229, 231, 235; /* gray-200 */
-  --gray-800: 31, 41, 55; /* gray-800 */
-  --gray-900: 17, 24, 39; /* gray-900 */
-}
-
 @layer base {
   html {
-    @apply scroll-smooth;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -51,7 +39,7 @@
   }
   
   .btn-primary {
-    @apply bg-green-600 text-white hover:bg-green-700;
+    @apply bg-primary-600 text-white hover:bg-primary-700;
   }
   
   .btn-outline {
@@ -79,9 +67,18 @@
   }
 }
 
+/* Dark mode support */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+  
+  body {
+    @apply bg-gray-900 text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white;
   }
 }

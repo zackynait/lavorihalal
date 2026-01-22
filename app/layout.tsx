@@ -1,14 +1,15 @@
+import React from "react"
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const _geist = Geist({ subsets: ["latin"] });
-const _geistMono = Geist_Mono({ subsets: ["latin"] });
+const _inter = Inter({ subsets: ["latin"] });
+const _dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Lavori Halal - Opportunità di Lavoro Etiche',
+  description: 'Trova lavoro in modo etico e trasparente. Piattaforma italiana per opportunità professionali halal.',
   generator: 'v0.app',
   icons: {
     icon: [

@@ -8,10 +8,6 @@ const nextConfig = {
         hostname: 'vercel.com',
       },
     ],
-  },
-  // Disabilita Turbopack
-  experimental: {
-    turbo: false
   }
 }
 

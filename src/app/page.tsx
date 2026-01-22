@@ -210,7 +210,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-700 mt-12 pt-8 text-center text-sm text-gray-400">
-            <p> 2024 LavoriHalal. Tutti i diritti riservati.</p>
+            <p> 2024 Perumus. Tutti i diritti riservati.</p>
           </div>
         </div>
       </footer>

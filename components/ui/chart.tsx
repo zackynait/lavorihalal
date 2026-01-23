@@ -104,7 +104,7 @@ ${colorConfig
 
 const ChartTooltip = RechartsPrimitive.Tooltip
 
-// Use Recharts' Payload type as the base and extend it
+// Define a more complete type for the tooltip payload item
 type TooltipPayloadItem = {
   name: string
   value: number | string
@@ -116,17 +116,13 @@ type TooltipPayloadItem = {
   strokeWidth?: number
   type?: string
   unit?: string
-  formatter?: (
-    value: any,
-    name: string,
-    item: any,
-    index: number,
-    payload: any
-  ) => React.ReactNode
-} & Partial<{
-  // Add any additional properties that might be needed
+  // Add the required graphicalItemId
+  graphicalItemId?: string
+  // Make the formatter more flexible to match Recharts' expectations
+  formatter?: any
+  // Allow any other properties
   [key: string]: any
-}>
+}
 
 type ChartTooltipContentProps = Omit<React.ComponentProps<typeof RechartsPrimitive.Tooltip>, 'content'> & {
   active?: boolean

@@ -23,6 +23,7 @@
     "@supabase/ssr": "^0.1.0",
     "@supabase/supabase-js": "^2.0.0",
     "@vercel/analytics": "latest",
+    "cmdk": "^0.2.1",
     "autoprefixer": "^10.4.14",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",

@@ -116,8 +116,8 @@ type TooltipPayloadItem = {
   strokeWidth?: number
   type?: 'none'  // Changed to match Recharts' expected type
   unit?: string
-  // Add the required graphicalItemId
-  graphicalItemId?: string
+  // Required by Recharts' Payload type
+  graphicalItemId: string
   // Make the formatter more flexible to match Recharts' expectations
   formatter?: any
   // Allow any other properties

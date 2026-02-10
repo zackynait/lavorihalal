@@ -22,6 +22,9 @@ export async function Header() {
           <Link href="/jobs" className="text-muted-foreground hover:text-foreground transition-colors">
             Annunci
           </Link>
+          <Link href="/faq" className="text-muted-foreground hover:text-foreground transition-colors">
+            FAQ
+          </Link>
           {user && (
             <Link href="/dashboard" className="text-muted-foreground hover:text-foreground transition-colors">
               Dashboard
